@@ -1,0 +1,12 @@
+<h1>Hello world, I am SHOW</h1>
+<p>this is cards > show.html.erb </p>
+
+<%= @card.id %>
+<%= @card.name %>
+<%= @card.position %>
+<%= @card.company %>
+<%= @card.phone %>
+<%= @card.email %>
+
+<%= link_to 'Edit card', edit_card_path %>
+<%= button_to 'delete card', delete_card_path, method: :delete %>
