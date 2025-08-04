@@ -1,37 +1,37 @@
-<%= form_with model: @card do |form| %>
+<%= form_with model: @card, class: "grid grid-cols-1 gap-y-6" do |form| %>
 
 <div>
-<%= form.label :name %>
-<%= form.text_field :name %>
+<%= form.label :name, class:"text-sm font-semibold" %>
+<%= form.text_field :name, class:"mt-2 w-full border-0 ring-1 ring-gray-400 rounded-sm px-3 py-1.5" %>
 </div>
 
 <div>
-<%= form.label :company %>
-<%= form.text_field :company %>
+<%= form.label :company, class:"text-sm font-semibold" %>
+<%= form.text_field :company, class:"mt-2 w-full border-0 ring-1 ring-gray-400 rounded-sm px-3 py-1.5" %>
 </div>
 
 <div>
-<%= form.label :position %>
-<%= form.text_field :position %>
+<%= form.label :position, class:"text-sm font-semibold" %>
+<%= form.text_field :position, class:"mt-2 w-full border-0 ring-1 ring-gray-400 rounded-sm px-3 py-1.5" %>
 </div>
 
 <div>
-<%= form.label :phone %>
-<%= form.text_field :phone %>
+<%= form.label :phone, class:"text-sm font-semibold" %>
+<%= form.text_field :phone, class:"mt-2 w-full border-0 ring-1 ring-gray-400 rounded-sm px-3 py-1.5" %>
 </div>
 
 <div>
-<%= form.label :email %>
-<%= form.text_field :email %>
+<%= form.label :email, class:"text-sm font-semibold" %>
+<%= form.text_field :email, class:"mt-2 w-full border-0 ring-1 ring-gray-400 rounded-sm px-3 py-1.5" %>
 </div>
 
 <div>
-<%= form.label :image_url %>
-<%= form.text_field :image_url %>
+<%= form.label :image_url, class:"text-sm font-semibold" %>
+<%= form.text_field :image_url, class:"mt-2 w-full border-0 ring-1 ring-gray-400 rounded-sm px-3 py-1.5" %>
 </div>
 
-<div>
-    <%= form.submit %>
+<div class="py-4">
+    <%= form.submit class: "px-2 py-2 bg-indigo-600 text-white rounded-sm" %>
 </div>
 
 <% end %>

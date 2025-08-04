@@ -1,12 +1,23 @@
-<h1>Hello world, I am SHOW</h1>
-<p>this is cards > show.html.erb </p>
+<%= link_to "<- Home", cards_path, class:"inline-block mt-2 text-gray-400 mb-6" %>
+<div class= "flex justify-between items-center">
+<h1 class="text-4xl font-semibold " >Hello world, I am SHOW</h1>
+</div>
 
-<%= @card.id %>
-<%= @card.name %>
-<%= @card.position %>
-<%= @card.company %>
-<%= @card.phone %>
-<%= @card.email %>
+<section class="mt-6 max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm grid grid-cols-2">
+<div class="justify-center">
+<h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"> <%= @card.name %> </h1>
+<p><%= @card.position %></p>
+<p><%= @card.company %></p>
+<p><%= @card.phone %></p>
+<p><%= @card.email %></p>
+</div>
+<div>
+<%= image_tag @card.image_url %>    
+ </div> 
 
-<%= link_to 'Edit card', edit_card_path %>
-<%= button_to 'delete card', delete_card_path, method: :delete %>
+</section>
+
+<div class="mt-4">
+<%= link_to 'Edit card', edit_card_path, class: "px-2 py-2 bg-indigo-600 text-white rounded-sm" %>
+<%= button_to 'delete card', delete_card_path, method: :delete, class: "mt-4 px-2 py-2 bg-red-200 text-red-600 rounded-sm" %>
+</div>

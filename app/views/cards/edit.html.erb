@@ -1,4 +1,9 @@
-<h1>Hello world, I am EDIT</h1>
-<p>this is cards > new.html.erb </p>
+<%= link_to "<- Back to card", card_path, class:"inline-block mt-2 text-gray-400 mb-6" %>
+<div class= "flex justify-between items-center">
+<h1 class="text-4xl font-semibold "> Edit note</h1>
+</div>
 
+<div class="mt-6"> 
 <%= render 'form' %>
+</div>
+<%= link_to "Cancel", cards_path, class:"inline-block mt-2" %>
